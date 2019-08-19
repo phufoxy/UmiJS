@@ -1,0 +1,33 @@
+@import "../../assets/styles/base/mixins";
+.footer {
+  background-color: rgba(0, 0, 0, 0.05);
+  .block {
+    @include flexbox();
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    &Left {
+      width: 240px;
+      padding: 10px 20px;
+      border-right: 1px solid rgba(0, 0, 0, 0.15);
+      .content {
+        &Norm {
+          @include rem(font-size, 12);
+        }
+        &Icon{
+          padding-right: 5px;
+        }
+      }
+    }
+    &Right {
+      width: calc(100% - 240px);
+      padding: 10px;
+      .content{
+        &Norm {
+          @include rem(font-size, 12);
+        }
+        &Icon{
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}

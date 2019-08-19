@@ -1,0 +1,17 @@
+@import "../../assets/styles/base/variables";
+@import "../../assets/styles/base/mixins";
+.form {
+  padding: 20px;
+  &Header {
+    padding: 10px 0;
+  }
+  &Title {
+    color: $color_green;
+    @include rem(font-size, 20);
+    font-weight: 700;
+  }
+  &Content {
+    background-color: $color_white;
+    padding: 5px;
+  }
+}
